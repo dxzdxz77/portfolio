@@ -7,6 +7,7 @@
     font-weight: 800;
     color: #F17476;
     text-align: center;
+    padding-top:20px;
 }
 /**********************/
 .container{
@@ -97,4 +98,13 @@ text-decoration: none !important;
 }
 
 /*********sub2**********************************************/
+#sub2 #sec1 .inner{
+    position: relative;
+}
+#sub2 #sec1 h1{
+    margin-bottom: 35px;
+}
+#sub2 #sec1 img{
+    width: 100%;
+}
 /*********sub3**********************************************/

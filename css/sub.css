@@ -1,14 +1,15 @@
 /*********sub1*************/
 #sec1{
     background-color: #FDE9EA;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
+    padding-top: 50px;
 }
 #sec1 h1{
     font-size: 2.5rem;
     font-weight: 800;
     color: #F17476;
     text-align: center;
-    padding-top:20px;
+    margin-bottom: 30px;
 }
 /**********************/
 .container{
@@ -99,11 +100,11 @@ text-decoration: none !important;
 }
 
 /*********sub2**********************************************/
+/*#sub2 #sec1{
+    padding-top: 100px;
+}*/
 #sub2 #sec1 .inner{
     position: relative;
-}
-#sub2 #sec1 h1{
-    margin-bottom: 35px;
 }
 #sub2 #sec1 img{
     width: 100%;

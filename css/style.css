@@ -4,54 +4,64 @@
     outline: 1px solid transparent;
   }
   /*******sec********************************************************/
-  #sec{
-    background: url(../images/background2.png)no-repeat center;
-    padding: 68px 0;
-  }
-#sec h1{
-    color: #F17476;
-    font-size: 3rem;
-    font-family: 'Sriracha', cursive;
-    margin-bottom: 30px;
-    text-align: center;
+#sec{
+    margin-top: 150px;
 }
 #sec .inner{
-}
-#sec .introduce{
-  margin: 0 auto;
-  width: 550px;
+  position: relative;
 }
 #sec .picture_box{}
+#sec .p_t{
+  position: absolute;
+  top: -20px;
+  right: 250px;
+  font-size: 10rem;
+  font-weight: 500;
+  letter-spacing: -.80rem;
+  color: #e4e4e4;
+}
 #sec .picture{
-  width: 170px;
-  float: left;
+  width: 400px;
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+#sec .picture2{
+  width: 400px;
+  position: absolute;
+  top: 70px;
+  right: 90px;
 }
 #sec .picture img{
   width: 100%;
 }
-#sec ul{
+#sec ul.text{
   float: left;
   font-weight: 500;
-  line-height: 2em;
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 0px;
+  margin-left: 30px;
 }
-#sec span{
-  margin-left: 20px;
+#sec ul.text > li{
+  font-size: 1.2rem;
+  line-height: 2em;
+}
+#sec ul.text > li:nth-child(1), #sec ul.text > li:nth-child(3),#sec ul.text > li:nth-child(5), #sec ul.text > li:nth-child(7), #sec ul.text > li:nth-child(9){
+  font-size: 1.5rem;
+  font-family: 'Sriracha', cursive;
+  line-height: 2.5em;
 }
 /*****sec1******************/
 #sec1{
-  background: url(../images/background3.png)no-repeat center;
-  background-size: cover;
-  padding: 80px 0;
-  margin-top: -1px;
+  margin: 100px 0;
+  margin-top: 150px;
 }
   #sec1 .title{
     font-size: 2.5rem;
     font-weight: 800;
-    color: #F17476;
-    margin-bottom: 40px;
+    color: #000;
+    margin-bottom: 70px;
     text-align: center;
+    font-family: 'Sriracha', cursive;
   }
   #sec1 .card_box{
     width: 280px;
@@ -109,8 +119,8 @@
     letter-spacing: -.25px;
     transform: translateX(-44px);
     font-weight: 700;
+    width: 300px;
   }
-  
   #sec1 h2{
     font-size: 21px;
     transform: translateX(-34px);
@@ -178,24 +188,16 @@
     left: -21px;
     opacity: .55;
   }
-  #sec1 .price{
-    position: absolute;
-    bottom: 34px;
-    left: 21px;
-    font-size: 34px;
-    opacity: .34;
-    font-family: 'Playfair Display SC', serif;
-  }
   #sec1 a{
     position: absolute;
     right: 21px; 
-    bottom: 28px;
+    bottom: 20px;
     border: none;
     font-weight: 700;
     font-size: 0.9rem;  
     padding: 13px 34px;
     border-radius: 20px;
-    background : #EF5D5F;
+    background : #ea1370;
     letter-spacing: -.25px;
     color: #fff;
     /*color: inherit;*/
@@ -211,11 +213,11 @@
   }
   #sec1 .price{
     position: absolute;
-    bottom: 34px;
+    bottom: 0px;
     left: 21px;
     font-size: 34px;
     opacity: .34;
-    font-family: 'Playfair Display SC', serif;
+    /*font-family: 'Playfair Display SC', serif;*/
   }
 
 
@@ -278,7 +280,7 @@
     position: relative;
     float: left;
     margin-left: 77px;
-    margin-bottom: 80px;
+    margin-bottom: 130px;
   }
   #sec1 .card_box3 .card{
     width: 280px;
@@ -321,9 +323,10 @@
     #sec1 .title2{
       font-size: 2.5rem;
       font-weight: 800;
-      color: #F17476;
-      margin-bottom: 10px;
+      color: #000;
+      margin-bottom: 35px;
       text-align: center;
+      font-family: 'Sriracha', cursive;
     }
     #sec1 .card_box4{
       width: 280px;

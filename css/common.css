@@ -1,17 +1,14 @@
 @charset "utf-8";
 
 /*googleips 웹폰트 css 파일 불러오기*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /*메인폰트*/
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-/*로고폰트*/
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-/*font-family: 'Playfair Display SC', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+/*
 font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Monoton', cursive; 메인폰트
-font-family: 'Sriracha', cursive; 로고폰트*/
+font-family: 'Dancing Script', cursive;
+font-family: 'Cookie', cursive;*/
 
 * {margin:0; padding:0;}
 
@@ -28,7 +25,8 @@ ul, ol, li{
 }
 img, fieldset{
       border: none;
-      vertical-align: middle}
+      vertical-align: middle;
+}
 hr {
       clear: both;
       border: none;
@@ -61,7 +59,7 @@ button{
       max-width: 1920px;
 }
 .inner{
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
 }
 /*******/
@@ -87,6 +85,12 @@ button{
       width: 20%;
       filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(338deg) brightness(105%) contrast(101%);
 }
+#header .logo:hover{
+      background-color: #fff;
+}
+#header .logo:hover img{
+      filter: invert(21%) sepia(66%) saturate(6850%) hue-rotate(324deg) brightness(94%) contrast(96%);
+}
 /******nav*******/
 
 #nav{
@@ -111,6 +115,12 @@ button{
       height: 3px;
       background-color: #fff;
 }
+.all_nav:hover{
+      background-color: #fff;
+}
+.all_nav:hover span{
+      background-color: #000;
+}
 .all_nav span:nth-child(1){
       top: 25px;
 }
@@ -129,7 +139,7 @@ button{
       height: 100%;
       overflow: auto;
       z-index: 9999999999999;
-      display: block;
+      /*display: none;*/
       background-color: #282222;
 }
 #nav_pop #nav_logo{
@@ -149,34 +159,40 @@ button{
 #nav_pop .nav_close:before{
       content:'';
       display: block;
-      width: 2px;
-      height: 20px;
+      width: 1px;
+      height: 50px;
       background-color:#fff;
       transform:rotate(45deg);
       position: absolute;
       top: 10px;
-      right: 20px;
+      right: 50px;
 }
 #nav_pop .nav_close:after{
       content:'';
       display: block;
-      width: 2px;
-      height: 20px;
+      width: 1px;
+      height: 50px;
       background-color:#fff;
       transform:rotate(-45deg);
       position: absolute;
       top: 10px;
-      right: 20px; 
+      right: 50px; 
 }
 /**/
 #nav_pop .navpop_inner{
-      width: 1024px;
+      max-width: 1024px;
       margin: 0 auto;
       position: relative;
+      padding-top: 100px;
+}
+#nav_pop .navpop_inner:after{
+      content:'';
+      display: block;
+      clear: both;
 }
 #nav_pop .left{
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
 }
 
@@ -198,15 +214,17 @@ button{
       font-size: 1.7rem;
 }
 #nav_pop .right{
-      position: absolute;
+      /*position: absolute;
       top: 0;
-      right: 0;
+      right: 0; bottom으로 내리지 못해서 float으로 수정함*/
+      float: right;
 }
 #nav_pop .nav_list{
       color: #fff;
       font-size: 1.7rem;
       font-weight: 500;
       line-height: 2em;
+      transition: 0.5s;
 }
 #nav_pop .home{
       width: 320px;
@@ -220,6 +238,14 @@ button{
       display: inline-block;
       padding: 25px 50px;
       margin-top: 50px;
+      transition: 0.5s;
+}
+#nav_pop .home:hover{
+      background-color: #fff;
+      color: #ea1370;
+}
+#nav_pop .nav_list li:hover{
+      color: #ea1370;
 }
 /**/
 #header .main_title{
@@ -234,20 +260,34 @@ button{
       position: absolute;
       top: 0;
       right: 0;
+      z-index: -1;
 }
 
 /*footer*/
 #footer{
       /*background-color: #F9C2C3;*/
-      padding: 10px 0;
+      padding: 30px 0;
       text-align: center;
-      font-family: 'Sriracha', cursive;
       font-weight: 500;
 }
 #footer h1{
       display: inline-block;
       width: 50px;
+      margin-bottom: 5px;
 }
 #footer h1 img{
       width: 100%;
+      filter: invert(24%) sepia(86%) saturate(6080%) hue-rotate(324deg) brightness(93%) contrast(97%);
+}
+
+
+
+/********************/
+@media all and (max-width:968px){
+      #nav_pop .left{
+            position: relative;
+      }
+      #nav_pop .right{
+            position: relative;
+      }
 }

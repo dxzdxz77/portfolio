@@ -19,18 +19,21 @@
   font-weight: 500;
   letter-spacing: -.80rem;
   color: #e4e4e4;
+  z-index: -1;
 }
 #sec .picture{
   width: 400px;
   position: absolute;
   top: -200px;
   right: 0;
+  z-index: -1;
 }
 #sec .picture2{
   width: 400px;
   position: absolute;
   top: 70px;
   right: 90px;
+  z-index: -1;
 }
 #sec .picture img{
   width: 100%;
@@ -45,23 +48,31 @@
   font-size: 1.2rem;
   line-height: 2em;
 }
-#sec ul.text > li:nth-child(1), #sec ul.text > li:nth-child(3),#sec ul.text > li:nth-child(5), #sec ul.text > li:nth-child(7), #sec ul.text > li:nth-child(9){
+#sec ul.text > li:nth-child(1), #sec ul.text > li:nth-child(3){
   font-size: 1.5rem;
-  font-family: 'Sriracha', cursive;
-  line-height: 2.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#sec ul.text > li:nth-child(2){
+  margin-bottom: 60px;
+}
+#sec ul.text > li span{
+  font-size: 0.95rem;
+  font-weight: 800;
 }
 /*****sec1******************/
 #sec1{
   margin: 100px 0;
   margin-top: 150px;
 }
+#sec1 .inner{}
   #sec1 .title{
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    /*font-weight: 800;*/
     color: #000;
     margin-bottom: 70px;
-    text-align: center;
-    font-family: 'Sriracha', cursive;
+    /*text-align: center;*/
+    font-family: 'Dancing Script', cursive;
   }
   #sec1 .card_box{
     width: 280px;
@@ -217,7 +228,6 @@
     left: 21px;
     font-size: 34px;
     opacity: .34;
-    /*font-family: 'Playfair Display SC', serif;*/
   }
 
 
@@ -234,7 +244,7 @@
     perspective: 800px;
     position: relative;
     float: left;
-    margin-left: 77px;
+    margin-left: 178px;
   }
   #sec1 .card_box2 .card{
     width: 280px;
@@ -279,7 +289,7 @@
     perspective: 800px;
     position: relative;
     float: left;
-    margin-left: 77px;
+    margin-left: 178px;
     margin-bottom: 130px;
   }
   #sec1 .card_box3 .card{
@@ -321,12 +331,12 @@
 
     /******card_box4*********/
     #sec1 .title2{
-      font-size: 2.5rem;
-      font-weight: 800;
+      font-size: 3rem;
+      /*font-weight: 800;*/
       color: #000;
       margin-bottom: 35px;
-      text-align: center;
-      font-family: 'Sriracha', cursive;
+      /*text-align: center;*/
+      font-family: 'Dancing Script', cursive;
     }
     #sec1 .card_box4{
       width: 280px;
@@ -380,7 +390,7 @@
   position: relative;
   float: left;
   margin-top: 30px;
-  margin-left: 77px;
+  margin-left: 178px;
 }
 #sec1 .card_box5 .card{
   width: 280px;
@@ -426,7 +436,7 @@
   perspective: 800px;
   position: relative;
   float: left;
-  margin-left: 77px;
+  margin-left: 178px;
   margin-top: 30px;
 }
 #sec1 .card_box6 .card{
@@ -466,6 +476,77 @@
   width: 160px;
 }
 
+/*********************************************/
+@media all and (max-width: 1270px){
+  #sec1 .card_box {
+    /*width: 280px;
+    height: 380px;
+    perspective: 800px;
+    position: relative;
+    float: left;*/
+    margin-left: 50px;
+}
+  #sec1 .card_box2 {
+    /*width: 280px;
+    height: 380px;
+    perspective: 800px;
+    position: relative;
+    float: left;*/
+    margin-left: 50px;
+  }
+  #sec1 .card_box3 {
+   /*width: 280px;
+    height: 380px;
+    perspective: 800px;
+    position: relative;
+    float: left;
+    margin-bottom: 130px;*/
+    margin-left: 50px;
+}
+#sec1 .title {
+  /*font-size: 3rem;
+  color: #000;
+  margin-bottom: 70px;
+  font-family: 'Dancing Script', cursive;*/
+  text-align: center;
+}
+#sec1 .title2 {
+  /*font-size: 3rem;
+  color: #000;
+  margin-bottom: 35px;
+  font-family: 'Dancing Script', cursive;*/
+  text-align: center;
+}
+#sec1 .card_box4 {
+  /*width: 280px;
+  height: 380px;
+  perspective: 800px;
+  position: relative;
+  float: left;
+  margin-top: 30px;*/
+  margin-left: 50px;
+}
+#sec1 .card_box5 {
+  /*width: 280px;
+  height: 380px;
+  perspective: 800px;
+  position: relative;
+  float: left;
+  margin-top: 30px;*/
+  margin-left: 50px;
+}
+#sec1 .card_box6 {
+  /*width: 280px;
+  height: 380px;
+  perspective: 800px;
+  position: relative;
+  float: left;
+  margin-top: 30px;*/
+  margin-left: 50px;
+}
+
+
+@media all and (max-width: 1030px){}
 
   /*@media only screen and (max-width: 600px){
     body{

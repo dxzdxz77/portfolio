@@ -1,13 +1,13 @@
 /*********sub1*************/
 #sec1{
-    background-color: #FDE9EA;
+    /*background-color: #EFEFEF;*/
     /*margin-top: 50px;*/
     padding-top: 50px;
 }
 #sec1 h1{
     font-size: 2.5rem;
     font-weight: 800;
-    color: #F17476;
+    color: #ea1370;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -29,9 +29,9 @@ color: rgba(255, 255, 255, 0.8);
 #fh5co-work a {
 color: #333;
 }
-#fh5co-work a:hover {
+/*#fh5co-work a:hover {
 color: white;
-}
+}*/
 #fh5co-work .section-heading h2 {
 color: #fff;
 }

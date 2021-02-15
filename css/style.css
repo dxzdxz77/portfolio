@@ -171,6 +171,7 @@
     pointer-events: none;
     backface-visibility: hidden;
     width: 250px;
+    z-index: 9998;
   }
   #sec1 .inner > div:hover .card_img{
     animation: float 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
@@ -289,6 +290,7 @@
     pointer-events: none;
     backface-visibility: hidden;
     width: 165px;
+    z-index: 9998;
   }
   /******card_box3*********/
   #sec1 .card_box3{
@@ -336,6 +338,7 @@
     pointer-events: none;
     backface-visibility: hidden;
     width: 210px;
+    z-index: 9998;
   }
 
     /******card_box4*********/
@@ -390,6 +393,7 @@
       pointer-events: none;
       backface-visibility: hidden;
       width: 220px;
+      z-index: 9998;
     }
  /******card_box5*********/
  #sec1 .card_box5{
@@ -437,6 +441,7 @@
   pointer-events: none;
   backface-visibility: hidden;
   width: 170px;
+  z-index: 9998;
 }
 
  /******card_box6*********/
@@ -485,6 +490,7 @@
   pointer-events: none;
   backface-visibility: hidden;
   width: 160px;
+  z-index: 9998;
 }
 
 /*********************************************/
